@@ -42,4 +42,4 @@ async def get_chapters(request: Request):
 
 app = web.Application()
 app.add_routes(routes)
-web.run_app(app, host='bbc-news.herokuapp.com')
+web.run_app(app, host='bbcnews-aiohttp.herokuapp.com')
