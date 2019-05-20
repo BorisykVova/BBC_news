@@ -3,6 +3,7 @@ async-timeout==3.0.1
 attrs==19.1.0
 beautifulsoup4==4.7.1
 chardet==3.0.4
+gunicorn==19.9.0
 idna==2.8
 multidict==4.5.2
 soupsieve==1.9.1

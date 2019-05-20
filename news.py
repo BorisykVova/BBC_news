@@ -4,6 +4,7 @@ from aiohttp import web
 from bs4 import BeautifulSoup
 from aiohttp.web_request import Request
 
+
 URL = 'https://www.bbc.com/'
 TEG = 'a'
 CLASS = "gs-c-promo-heading"
