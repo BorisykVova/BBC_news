@@ -1,1 +1,1 @@
-web: python news.py
+web: python news.py runserver localhost:5000
