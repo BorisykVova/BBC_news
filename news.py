@@ -1,3 +1,4 @@
+import os
 from pprint import pformat
 from aiohttp import ClientSession
 from aiohttp import web
@@ -43,4 +44,4 @@ async def get_chapters(request: Request):
 
 app = web.Application()
 app.add_routes(routes)
-web.run_app(app)
+web.run_app(app, host='0.0.0.0', port=os.environ.get('PORT', 5000))
