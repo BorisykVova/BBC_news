@@ -33,8 +33,8 @@ async def get_chapters(request: Request):
 
         try:
             params = convert.check(params)
-        except DataError as err:
-            return web.Response(text=str(err))
+        except DataError:
+            return web.Response(text=str(t.extract_error(convert, params)))
 
         chapter = params['chapter']
         limit = params['limit']
