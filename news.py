@@ -53,4 +53,4 @@ async def get_chapters(request: Request):
 
 app = web.Application()
 app.add_routes(routes)
-web.run_app(app, host='localhost', port=os.environ.get('PORT', 5000))
+web.run_app(app, port=os.environ.get('PORT', 5000))
